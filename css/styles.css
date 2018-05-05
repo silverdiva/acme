@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+background-image: url("images/site/background.jpg");
+background-size: cover;
+}
+
+#container {
+	max-width: 1200px;
+	max-height: 1600px;
+	background-color:#ffffff;
+   	position: relative;
+	
+   
+	
+}
+#logo {
+	height: 75px;
+}
+
+#account {
+	height: 15px;
+	
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #af2d2d;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color: #ffffff;
+	color: #af2d2d;
+}
+nav{
+   
+   
+   
+    
+    
+    
+}
+nav a{
+    
+    text-decoration: none;
+    font-size: 14pt;
+	
+    
+}
+nav a:hover{
+    color: #732209;
+    background-color: #edf3d5;
+	text-align: center;
+    padding: 14px 16px;
+	margin: 3px 0px 0px 0px;
+}
+.hero-image {
+	
+	background-image: url(images/site/rocketfeature.jpg);
+	height: 400px;
+	max-width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+}
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	
+}
+#herotext{
+	padding: 0px 40px ;
+}
+.hero-text {
+	text-align: left;
+	padding: 20px;
+	color: #af2d2d;
+}
+.hero-text ul {
+	 list-style-type: none;
+}
+#featured{
+	
+	min-width:  1200px;
+}
+#flexreviewsrecipes{
+	max-width: 50%;
+	min-width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+#frecipes{
+	display: inherit;
+	max-width: 40%;
+	justify-content: flex-end;
+}
+#frecipes2{
+	display: inherit;
+	max-width: 40%;
+}
+#reviews{
+	max-width: 60%;
+	min-width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+#subnav ul {
+	 border-top: 3px solid #000000;
+    list-style-type: none;
+    margin: 3px ;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+#subnav li {
+    float: left;
+	text-align: center;
+}
+
+#subnav li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+#subnav li a:hover {
+    background-color: #111;
+	padding: 3px 14px 16px;
+}
+footer {
+	text-align: center;
+}
+@media screen and (max-width: 37.5em ){
+	container{	width: 100%;
+				
+				}
+	#herotext{ width: 100%;
+				float: left;
+				font-size: 20px;
+	
+	}
+	.hero-text	{ width: 50%;
+				float: left;
+				font-size: 11px;
+	
+	}
+	#actionbtn{	width: 100%;
+		
+	}
+	
+		
+}
+@media screen and (max-width: 350px ){
+	container{	width: 100%;
+				
+				}
+	#herotext{ width: 100%;
+				float: left;
+				font-size: 12px;
+	
+	}
+	.hero-text	{ width: 50%;
+				float: left;
+				font-size: 12px;
+	
+	}
+	#actionbtn{	width: 100%;
+		
+	}
+	.hero-image {width: 100%
+				}
+	
+		
+}
