@@ -1,4 +1,3 @@
-<?php
 
 <div id="nav">
     <a href="#" title="Home">Home</a>

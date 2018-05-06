@@ -1,5 +1,3 @@
-<?php
-
 
 <h6> 
     &copy; ACME, All rights reserved.
