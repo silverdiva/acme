@@ -1,9 +1,8 @@
-
-<div id="nav">
-    <a href="#" title="Home">Home</a>
-    <a href="#" title="Cannon">Cannon</a>
-    <a href="#" title="Explosive">Explosive</a>
-    <a href="#" title="Misc">Misc</a>
-    <a href="#" title="Rocket">Rocket</a>
-    <a href="#" title="Trap">Trap</a>
-</div>
+<ul>
+    <li> <a href="#" title="Home">Home</a></li>
+    <li> <a href="#" title="Cannon">Cannon</a></li>
+    <li> <a href="#" title="Explosive">Explosive</a></li>
+    <li> <a href="#" title="Misc">Misc</a></li>
+    <li> <a href="#" title="Rocket">Rocket</a></li>
+    <li> <a href="#" title="Trap">Trap</a></li>
+</ul>
