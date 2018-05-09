@@ -3,19 +3,31 @@
 /* CSS Document */
 
 /***********************BODY STYLING***********************/ 
-
-
-body {
-    
-    width: 1000px;
-    margin: auto;
-    font-family: Comic Sans MS;
-    font-weight: bold;
+html {
+    background-image: url('/acme/images/site/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#background {
-    background: url ("/images/site/background.jpg");
+body {
+    width: 84%;
+    margin: 0 auto;
+
+    font-family: Comic Sans MS;
+    font-weight: bold;
+
+}
+
+/*#background {
+    background-repeat: no-repeat, repeat;
     background-size: 100%;
+    position: relative;
+    width: 1200px;
+    height: 1600px;
+}*/
+
+#container {
+    background-color: #ffffff;
 }
 
 h1 {
@@ -30,13 +42,6 @@ h3 {
     font-size: 30px;
 }
 
-
-#container {
-    max-width: 1200px;
-    max-height: 1600px;
-    background-color: #ffffff;
-    position: relative;
-}
 
 
 #logo {
@@ -91,19 +96,19 @@ nav a {
 
 
 /***********************MAIN STYLING***********************/
-#rocket {
-    /*background-image: url(images/site/rocketfeature.jpg);*/
-    height: 400px;
+.hero {
+
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
 }
 
 
+
+
 section {
     display: flex;
+    width: 100%;
     /*justify-content: center;
  flex-wrap: wrap;*/
 }
@@ -115,6 +120,25 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+}
+
+.flex-recipe{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+
+}
+
+.flex-recipe img{
+    width: 25%;
+}
+
+
+
+.gridImage{
+    width: 50%;
 }
 
 
@@ -132,10 +156,10 @@ section {
 
 .hero-text {
     text-align: left;
-    padding: 20px;
+
     color: #af2d2d;
     position: absolute;
-    top: 210px;
+    top: 30%;
 }
 
 
@@ -230,12 +254,26 @@ footer {
     .hero-text {
         width: 50%;
         float: left;
+        position: absolute;
         font-size: 11px;
+        bottom: 10%;
+       
     }
     #actionbtn {
         width: 100%;
     }
-
+    section{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #featured-recipies{
+        width: 100%;
+    }
+    #rocket-reviews{
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 350px) {
     container {
@@ -249,7 +287,8 @@ footer {
     .hero-text {
         width: 50%;
         float: left;
-        font-size: 12px;
+        font-size: .2em;
+     
     }
     #actionbtn {
         width: 100%;
@@ -257,5 +296,16 @@ footer {
     .hero-image {
         width: 100%
     }
+      section{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #featured-recipies{
+        width: 100%;
+    }
+    #rocket-reviews{
+        width: 100%;
+    }
 
-    
+}

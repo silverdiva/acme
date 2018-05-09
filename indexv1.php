@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 
 
@@ -12,9 +13,7 @@
 
 
 <body>
-    <div id="background">  
-        <!--<img src="/acme/images/site/background.jpg" id="background" alt="Background Image" />-->
-        <div id="container">
+    <div id="background">
         <header>
             <?php
             include $_SERVER['DOCUMENT_ROOT'].'/acme/common/header.php';
@@ -30,7 +29,7 @@
         <main>
             <h1>Welcome to Acme!</h1>
             <div class="hero-image">
-                <img class="hero" src="/acme/images/site/rocketfeature.jpg" alt="Rocket Feature" />
+                <img src="/acme/images/site/rocketfeature.jpg" id="rocket" alt="Rocket Feature" />
                 <div class="flex-container">
                     <div class="hero-text">
                         <h2 id="herotext">Acme Rocket</h2>
@@ -47,24 +46,23 @@
             <section>
                 <div id="featured-recipies">
                     <h3>Featured Recipes</h3>
-                    <div class="flex-recipe">
-                    <div class="gridImage">
-                        <img src="images/recipes/bbqsand.jpg" alt="BBQ"><br>
-                            <a href="#" title="See Recipe">Pulled Roadrunner BBQ</a>
-                    </div>
-                        <div class="gridImage">
-                            <img src="images/recipes/potpie.jpg" alt="Pot Pie"><br>
-                           <a href="#" title="See Recipe">Roadrunner Pot Pie</a>
-                        </div>
-                       
-                           <div class="gridImage">
-                               <img src="images/recipes/soup.jpg" alt="Soup"><br>
-                            <a href="#" title="See Recipe">Roadrunner Soup</a>
-                           </div>
-                            <div class="gridImage">
-                                <img src="images/recipes/taco.jpg" alt="Taco"><br>
-                            <a href="#" title="See Recipe">Roadrunner Tacos</a>
-                            </div>
+                    <div class="flex-container">
+                        <figure>
+                            <img src="images/recipes/bbqsand.jpg" alt="BBQ"><br />
+                            <figcaption>Pulled Roadrunner BBQ</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/recipes/potpie.jpg" alt="Pot Pie"><br />
+                            <figcaption>Roadrunner Pot Pie</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/recipes/soup.jpg" alt="Soup"><br />
+                            <figcaption>Roadrunner Soup</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/recipes/taco.jpg" alt="Taco"><br />
+                            <figcaption>Roadrunner Tacos</figcaption>
+                        </figure>
                     </div>
                 </div>
 
@@ -87,7 +85,6 @@
             include $_SERVER['DOCUMENT_ROOT'].'/acme/common/footer.php';
             ?>
         </footer>
-    </div>
     </div>
 </body>
 
