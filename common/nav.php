@@ -1,5 +1,5 @@
 <ul>
-    <li> <a href="#" title="Home">Home</a></li>
+    <li> <a href="/acme/index.php" title="Home">Home</a></li>
     <li> <a href="#" title="Cannon">Cannon</a></li>
     <li> <a href="#" title="Explosive">Explosive</a></li>
     <li> <a href="#" title="Misc">Misc</a></li>

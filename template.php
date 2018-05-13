@@ -6,7 +6,7 @@
         <title>Acme Assignment</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="/acme/styles.css" type="text/css" media="screen">
         <!--<link href="<?php echo BASE_URL; ?>styles.php" rel="stylesheet" type="text/css">-->
         
     </head>

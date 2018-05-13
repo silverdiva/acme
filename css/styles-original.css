@@ -1,6 +1,6 @@
-/* PHP Acme Site Styling*/
+/* Acme Site Styling v2 */
 
-/***BODY STYLING*********************************/
+/*****BODY STYLING****/ 
 html {
     background-image: url('/acme/images/site/background.jpg');
     background-size: cover;
@@ -8,31 +8,35 @@ html {
 }
 
 body {
-    width: 97%;
+    width: 84%;
     margin: 0 auto;
     font-family: Comic Sans MS;
     font-weight: bold;
-    padding-right:1%;
 }
 
-#container-body {
+#container {
     background-color: #ffffff;
 }
 
-/***HEADER STYLING******************************/
+h1 {
+    font-size: 54px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
 #logo {
     height: 75px;
-    margin: 15px;
 }
 
 .account {
     height: 15px;
     position: relative;
-    margin-left: 400px;
 }
 
 
-/***NAV STYLING********************************/
+/*****NAV STYLING*****/ 
 nav ul {
     margin: 0;
     padding: 0;
@@ -59,52 +63,56 @@ nav a:hover {
 }
 
 nav a {
+
     text-decoration: none;
     font-size: 14pt;
 }
 
 
-/***MAIN STYLING*******************************/
-h1 {
-    font-size: 54px;
-    margin: 5px;
-}
-
-h2 {
-    font-size: 40px;
-}
-
-h3 {
-    font-size: 30px;
-}
-
-#container-hero {
-    display: flex;
-    width: 100%;
-}
-
-.hero-banner {
-    width: 99%;
-    margin: 5px;
-}
-
+/*****MAIN STYLING*****/
 .hero-image {
     width: 100%;
     background-size: 100%;
     position: relative;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+section {
+    display: flex;
+    width: 100%;
+}
+
+.flex-recipe{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+
+.flex-recipe img{
+    width: 25%;
+}
+
+.gridImage{
+    width: 50%;
+}
+
+#heroheader {
+    padding: 0px 40px;
+    width: 100%;
+    float: left;
+}
+
 .hero-text {
     color: #af2d2d;
     position: absolute;
-    text-align: left;
-    top: 20%;
-    left: 60%;
-}
-
-.hero-text h2 {
-    padding: 0px 40px;
-    width: 100%;
+    top: 30%;
 }
 
 .hero-text ul {
@@ -112,31 +120,35 @@ h3 {
     text-align: left;
 }
 
-section {
-    display: flex;
-    width: 100%;
-    margin: 15px;
+#featured {
+    min-width: 1200px;
 }
 
-.flex-recipe {
-    width: 100%;
+#flexreviewsrecipes {
+    max-width: 50%;
+    min-width: 50%;
     display: flex;
     flex-wrap: wrap;
-    padding: 1%;
+    justify-content: flex-start;
 }
 
-.flex-recipe img {
-    width: 25%;
+#frecipes {
+    display: inherit;
+    max-width: 40%;
+    justify-content: flex-end;
 }
 
-.gridImage {
-    width: 50%;
+#frecipes2 {
+    display: inherit;
+    max-width: 40%;
 }
 
-
-/***FOOTER STYLING******************************/
-footer {
-    text-align: center;
+#reviews {
+    max-width: 60%;
+    min-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 #subnav ul {
@@ -166,55 +178,58 @@ footer {
 }
 
 
-/***MEDIA QUERIES*******************************/
-/*LARGE*/
-/*@media screen and (min-width: 1200px)*/
-@media screen and (max-width: 37.5em) {
-    #container-body {
+/*****FOOTER STYLING******/
+footer {
+    text-align: center;
+}
+
+
+/*****MEDIA QUERIES*****/
+/*LARGE SCREEN*/
+@media screen and (min-width: 1200px) {
+    container {
         width: 100%;
     }
     h2 {
         width: 100%;
-        /*font-size: 40px;*/
+        float: left;
+        font-size: 40px;
     }
     .hero-text {
-        width: 70%;
+        width: 50%;
+        float: left;
         position: absolute;
-        /*font-size: 10px;*/
+        font-size: 30px;
+        bottom: 10%;
     }
     #actionbtn {
         width: 100%;
     }
-    section {
+    section{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
-    #featured-recipies {
+    #featured-recipies{
         width: 100%;
     }
-    #rocket-reviews {
+    #rocket-reviews{
         width: 100%;
     }
     .account {
-        margin-left: 400px;
+        margin-left: 800px;
         }
 }
 
 /*SMALL SCREEN*/
-/*@media screen and (min-width: 550px){*/
-@media screen and (max-width: 350px) {
-    #container-body {
+@media screen and (min-width: 550px) {
+    container {
         width: 100%;
     }
     .hero-text {
-        width: 10%;
-        height: 10%;
-        font-size: 10px;
-        top: 5%;
-        left: 30%;
-        position: relative;
-     }
+        width: 50%;
+        float: left;
+    }
     h2 {
         padding: 0px 20px;
     }
@@ -224,15 +239,15 @@ footer {
     .hero-banner {
         width: 100%
     }
-    section {
+    section{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
-    #featured-recipies {
+    #featured-recipies{
         width: 100%;
     }
-    #rocket-reviews {
+    #rocket-reviews{
         width: 100%;
     }
     .account {

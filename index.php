@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kim Llanos">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/acme/css/styles.css" type="text/css">
 </head>
 
 
@@ -47,19 +47,19 @@
                         <h3>Featured Recipes</h3>
                         <div class="flex-recipe">
                             <div class="gridImage">
-                                <img src="images/recipes/bbqsand.jpg" alt="BBQ"><br>
+                                <img src="/acme/images/recipes/bbqsand.jpg" alt="BBQ"><br>
                                 <a href="#" title="See Recipe">Pulled Roadrunner BBQ</a>
                             </div>
                             <div class="gridImage">
-                                <img src="images/recipes/potpie.jpg" alt="Pot Pie"><br>
+                                <img src="/acme/images/recipes/potpie.jpg" alt="Pot Pie"><br>
                                 <a href="#" title="See Recipe">Roadrunner Pot Pie</a>
                             </div>
                             <div class="gridImage">
-                                <img src="images/recipes/soup.jpg" alt="Soup"><br>
+                                <img src="/acme/images/recipes/soup.jpg" alt="Soup"><br>
                                 <a href="#" title="See Recipe">Roadrunner Soup</a>
                             </div>
                             <div class="gridImage">
-                                <img src="images/recipes/taco.jpg" alt="Taco"><br>
+                                <img src="/acme/images/recipes/taco.jpg" alt="Taco"><br>
                                 <a href="#" title="See Recipe">Roadrunner Tacos</a>
                             </div>
                         </div>

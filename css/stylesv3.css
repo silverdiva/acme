@@ -1,6 +1,6 @@
-/* PHP Acme Site Styling*/
+/* PHP Acme Site Styling v2 */
 
-/***BODY STYLING*********************************/
+/*****BODY STYLING****/
 html {
     background-image: url('/acme/images/site/background.jpg');
     background-size: cover;
@@ -19,20 +19,45 @@ body {
     background-color: #ffffff;
 }
 
-/***HEADER STYLING******************************/
-#logo {
+/*HEADER STYLING*/
+header {
+    display: flex;
+}
+
+#top-bar {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+}
+
+#logo-container {
+    width: 50%;
     height: 75px;
-    margin: 15px;
+    background-color: limegreen;
 }
 
-.account {
+#account-container {
+    width: 50%;
+    height: 75px;
+    background-color: aquamarine;
+    margin-left: 425px;
+    margin-top: -75px;
+}
+
+.main-logo {
+    height: 90%;
+    margin: 5px;
+}
+
+
+.account-box {
     height: 15px;
-    position: relative;
-    margin-left: 400px;
+    margin: 5px;
 }
 
-
-/***NAV STYLING********************************/
+/*****NAV STYLING*****/
 nav ul {
     margin: 0;
     padding: 0;
@@ -51,6 +76,7 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin: 5px;
 }
 
 nav a:hover {
@@ -64,10 +90,10 @@ nav a {
 }
 
 
-/***MAIN STYLING*******************************/
+/*****MAIN STYLING*****/
 h1 {
     font-size: 54px;
-    margin: 5px;
+    margin: 10px;
 }
 
 h2 {
@@ -75,66 +101,77 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 20px;
+    margin: 8px;
 }
 
-#container-hero {
+#hero-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .hero-banner {
-    width: 99%;
-    margin: 5px;
+    width: 100%;
+    height: 100%;
 }
 
 .hero-image {
-    width: 100%;
+    width: 99%;
     background-size: 100%;
     position: relative;
+    margin: 5px;
 }
 
 .hero-text {
     color: #af2d2d;
-    position: absolute;
-    text-align: left;
-    top: 20%;
-    left: 60%;
+    width: 50%;
+    padding: 1%;
 }
 
 .hero-text h2 {
-    padding: 0px 40px;
-    width: 100%;
+    /*width: 100%;*/
+    background-color: yellowgreen;
 }
 
 .hero-text ul {
     list-style-type: none;
     text-align: left;
+    flex-wrap: wrap;
+    padding: 1%;
+    background-color: violet;
 }
+
+.hero-text ul li {
+    font-size: 20px;
+ }
 
 section {
     display: flex;
     width: 100%;
-    margin: 15px;
 }
 
-.flex-recipe {
+.flex-recipe{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 1%;
 }
 
-.flex-recipe img {
+.flex-recipe img{
     width: 25%;
 }
 
-.gridImage {
+.gridImage{
     width: 50%;
+    text-align: center;
+    border: .2px;
 }
 
 
-/***FOOTER STYLING******************************/
+
+/*****FOOTER STYLING******/
 footer {
     text-align: center;
 }
@@ -166,76 +203,82 @@ footer {
 }
 
 
-/***MEDIA QUERIES*******************************/
-/*LARGE*/
+/*****MEDIA QUERIES*****/
+/*LARGE SCREEN*/
 /*@media screen and (min-width: 1200px)*/
 @media screen and (max-width: 37.5em) {
-    #container-body {
+    /*container {
         width: 100%;
+    }*/
+    #account-container {
+        margin-left: 325px;
+        margin-top: -75px;
     }
     h2 {
         width: 100%;
-        /*font-size: 40px;*/
+        float: left;
+        font-size: 40px;
     }
     .hero-text {
-        width: 70%;
+        width: 50%;
+        float: left;
         position: absolute;
-        /*font-size: 10px;*/
+        font-size: 30px;
+        bottom: 10%;
     }
     #actionbtn {
-        width: 100%;
+        width: 60%;
     }
-    section {
+    section{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
-    #featured-recipies {
+    #featured-recipies{
         width: 100%;
     }
-    #rocket-reviews {
-        width: 100%;
+    #rocket-reviews{
+        width: 50%;
     }
-    .account {
-        margin-left: 400px;
-        }
 }
 
 /*SMALL SCREEN*/
-/*@media screen and (min-width: 550px){*/
+/*@media screen and (min-width: 550px)*/
 @media screen and (max-width: 350px) {
-    #container-body {
+    /*#container-body {
         width: 100%;
-    }
-    .hero-text {
-        width: 10%;
-        height: 10%;
-        font-size: 10px;
-        top: 5%;
-        left: 30%;
-        position: relative;
-     }
-    h2 {
-        padding: 0px 20px;
-    }
-    #actionbtn {
-        width: 50%;
+    }*/
+    #account-container {
+        margin-left: 125px;
+        margin-top: -75px;
     }
     .hero-banner {
         width: 100%
     }
-    section {
+    hero-text ul li {
+        font-size: 20px;
+        width: 100%;
+        margin-left: 20px;
+    }
+    h2 {
+        padding: 0px 20px;
+    }
+    #actionbtn {
+        width: 80%;
+    }
+    section{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
-    #featured-recipies {
-        width: 100%;
+    #featured-recipies{
+        width: 40%;
     }
-    #rocket-reviews {
-        width: 100%;
+    #rocket-reviews{
+        width: 60%;
     }
-    .account {
-        margin-left: 100px;
-    }
+    /*.account {
+        margin-left: 500px;
+        position: relative;
+    }*/
 }
