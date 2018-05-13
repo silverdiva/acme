@@ -1,0 +1,25 @@
+// INSERT sql: add (1) row to tblclients
+INSERT INTO `clients`(`clientFirstname`, `clientLastname`, `clientEmail`, `clientPassword`, `comments`) 
+VALUES ('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n','I am the real Ironman');
+
+
+//MODIFY sql tblclient.clientLevel from '1' to '3'
+UPDATE clients SET clientLevel= 3 WHERE clientId = 1
+
+
+//DELETE sql tblinventory.invName, tblinventoryinvDescription
+Update inventory
+Set invName = replace(invName, 'Nylon Rope', 'Climbing Rope'),
+invDescription = replace(invDescription, 'nylon rope', 'climbing rope')
+WHERE invId = 15;
+
+
+//INNER JOIN sql on tblcategory, tblinventory
+SELECT invName, categoryName
+FROM inventory
+INNER JOIN categories ON inventory.categoryId = categories.categoryId
+WHERE categoryName = 'Misc';
+
+
+//DELETE sql from tblInventory row = Koenigsegg CCX 
+DELETE FROM inventory WHERE invId = 7;
